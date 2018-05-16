@@ -173,7 +173,7 @@
 					console.log(err);
 				})
 			},
-			getArticle: function(){
+			getArticle: function(id){
 				this.loading = true;
 				this.$http.get('/api/article/{$id}/')
 				.then((response) => {
